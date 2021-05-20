@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA4828D9-63BF-498B-9DD8-6DE2721B7516}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TCC</RootNamespace>
+    <AssemblyName>TCC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.OData.Client, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Client.7.5.0\lib\net45\Microsoft.OData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Core, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Core.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.OData.Edm, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.OData.Edm.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.OData.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Spatial, Version=7.5.0.20627, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Spatial.7.5.0\lib\portable-net45+win8+wpa81\Microsoft.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcliente.Designer.cs">
+      <DependentUpon>addcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addestoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addestoque.Designer.cs">
+      <DependentUpon>addestoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addFale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addFale.Designer.cs">
+      <DependentUpon>addFale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addfornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addfornecedor.Designer.cs">
+      <DependentUpon>addfornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addfuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addfuncionario.Designer.cs">
+      <DependentUpon>addfuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addlancarcontas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addlancarcontas.Designer.cs">
+      <DependentUpon>addlancarcontas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addpersonalizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addpersonalizar.Designer.cs">
+      <DependentUpon>addpersonalizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addproduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addproduto.Designer.cs">
+      <DependentUpon>addproduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addvendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addvendas.Designer.cs">
+      <DependentUpon>addvendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentacao\NovaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\NovaSenha.Designer.cs">
+      <DependentUpon>NovaSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEncomendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEncomendas.Designer.cs">
+      <DependentUpon>ConsultarEncomendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFornecedor.Designer.cs">
+      <DependentUpon>ConsultarFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFuncionario.Designer.cs">
+      <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVendas.Designer.cs">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ClasseBD.cs" />
+    <Compile Include="BLL\ClasseParaManipularBancoDeDados.cs" />
+    <Compile Include="DAL\ClientesDAL.cs" />
+    <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\FabricaConexao.cs" />
+    <Compile Include="DAL\FuncoesGerais.cs" />
+    <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="Apresentacao\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentacao\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Produto.cs" />
+    <Compile Include="DAL\SqlHelper.cs" />
+    <Compile Include="DesejaCPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesejaCPF.Designer.cs">
+      <DependentUpon>DesejaCPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesejaSair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesejaSair.Designer.cs">
+      <DependentUpon>DesejaSair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encomendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encomendas.Designer.cs">
+      <DependentUpon>Encomendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Controle.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjetoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjetoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjetoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regex.cs" />
+    <Compile Include="Responder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Responder.Designer.cs">
+      <DependentUpon>Responder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcliente.resx">
+      <DependentUpon>addcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addestoque.resx">
+      <DependentUpon>addestoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addFale.resx">
+      <DependentUpon>addFale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addfornecedor.resx">
+      <DependentUpon>addfornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addfuncionario.resx">
+      <DependentUpon>addfuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addlancarcontas.resx">
+      <DependentUpon>addlancarcontas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addpersonalizar.resx">
+      <DependentUpon>addpersonalizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduto.resx">
+      <DependentUpon>addproduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addvendas.resx">
+      <DependentUpon>addvendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentacao\NovaSenha.resx">
+      <DependentUpon>NovaSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEncomendas.resx">
+      <DependentUpon>ConsultarEncomendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFornecedor.resx">
+      <DependentUpon>ConsultarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFuncionario.resx">
+      <DependentUpon>ConsultarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVendas.resx">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesejaCPF.resx">
+      <DependentUpon>DesejaCPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesejaSair.resx">
+      <DependentUpon>DesejaSair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encomendas.resx">
+      <DependentUpon>Encomendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Responder.resx">
+      <DependentUpon>Responder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="ProjetoDataSet.xsc">
+      <DependentUpon>ProjetoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetoDataSet.xss">
+      <DependentUpon>ProjetoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetoDataSet1.xsc">
+      <DependentUpon>ProjetoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjetoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjetoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjetoDataSet1.xss">
+      <DependentUpon>ProjetoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon senha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Padaria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Padaria1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart-reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5555555555555555555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\mostrar-senha.png" />
+    <Content Include="Resources\senha.png" />
+    <None Include="Resources\66648.png" />
+    <None Include="Resources\666481.png" />
+    <None Include="Resources\a satisfação do cliente.png" />
+    <None Include="Resources\a satisfação do cliente2.png" />
+    <Content Include="Resources\add-to-queue-button_icon-icons.com_72877.png" />
+    <None Include="Resources\refresh-rondure_icon-icons.com_53906.png" />
+    <None Include="Resources\search-circular-symbol_icon-icons.com_538001.png" />
+    <None Include="Resources\save_789351.png" />
+    <None Include="Resources\kitchentrashbin_873291.png" />
+    <None Include="Resources\edit-document_icon-icons.com_545421.png" />
+    <None Include="Resources\add-to-queue-button_icon-icons.com_728771.png" />
+    <None Include="Resources\backs respoonderrrrrr.png" />
+    <None Include="Resources\cadeado.png" />
+    <Content Include="Resources\edit-document_icon-icons.com_54542.png" />
+    <None Include="Resources\Kakashi-Obito-Mangekyou-Sharingan-Naruto-Vinyl-Decal-Sticker.jpg" />
+    <None Include="Resources\JapanFillStyle-04-512.png" />
+    <None Include="Resources\icons8-ios-preenchido-50.png" />
+    <None Include="Resources\icons8-vassoura-100.png" />
+    <Content Include="Resources\kitchentrashbin_87329.png" />
+    <None Include="Resources\Padaria copia.png" />
+    <None Include="Resources\refresh_icon-icons.com_67954.png" />
+    <None Include="Resources\Naruto-Mangekyou-Sharingan-Vinyl-Decal-Sticker.jpg" />
+    <None Include="Resources\Padaria copia1.png" />
+    <None Include="Resources\rating-on-customer-service-illustration-website-rating-feedback-and-review-concept-blog-satisfacao-de-clientes.jpg" />
+    <Content Include="Resources\save_78935.png" />
+    <Content Include="Resources\search-circular-symbol_icon-icons.com_53800.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

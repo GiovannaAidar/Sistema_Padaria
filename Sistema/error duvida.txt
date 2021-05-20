@@ -1,0 +1,4 @@
+            if (!loginDao.mensagem.Equals(""))
+            {
+                this.mensagem = loginDao.mensagem;
+            }
